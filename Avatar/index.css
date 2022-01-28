@@ -1,0 +1,107 @@
+.kash-avatar-regular {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+.kash-avatar-container-one {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  /* width: 20rem; */
+  padding: 1rem;
+  /* border-width: 1px 0px; */
+  border-style: solid;
+  border-color: rgba(17, 14, 14, 0.137);
+  /* border-width: 20rem; */
+  /* width: 20rem; */
+  /* overflow-y: scroll; */
+  /* width: 100%; */
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.kash-avatar-small {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.kash-avatar-large {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+.kash-avatar-letter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.kash-avatar-icon {
+  text-align: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.kash-avatar-badge-container {
+  position: relative;
+  display: flex;
+}
+.kash-avatar-badge-container > i {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.7rem;
+  background-color: rgb(27, 245, 74);
+  border-width: 0.1rem;
+  border-color: var(--white);
+  border-style: solid;
+}
+
+.kash-avatar-badge-container > i {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  animation: ripple 3s linear infinite;
+  bottom: 0;
+  right: 0;
+}
+.kash-avatar-badge-container > .badge-image {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-color: var(--green);
+  border-style: solid;
+}
+.kash-avatar-badge-container > i::before,
+.kash-avatar-badge-container > i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  animation: inherit;
+  animation-delay: 1s;
+  border-color: var(--white);
+  border-style: solid;
+}
+.kash-avatar-badge-container > i::after {
+  animation-delay: 2s;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0.1rem var(--green);
+  }
+  100% {
+    box-shadow: 0 0 0 0.5rem rgba(255, 255, 255, 0);
+  }
+}

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto";
+  margin: 0;
+  height: 100vh;
+  width: 98vw;
+}
+:root {
+  --blue: rgb(80, 80, 255);
+  --dark-red: #d90429;
+  --white: #ffffff;
+  --green: rgb(80, 255, 133);
+  --gray: #2b2d42;
+  --light-red: #ef233c;
+  --light-gray: #edf2f4;
+  --dark-gray: #8d99ae;
+}
+.kash-bg-color-primary {
+  background-color: var(--blue);
+}
+.kash-bg-color-secondary {
+  background-color: var(--red);
+}
+.kash-bg-color-green {
+  background-color: var(--green);
+}
+
+.kash-clickable {
+  cursor: pointer;
+}
+
+.kash-sidebar {
+  height: 100vh;
+  width: 18rem;
+  /* box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem gray; */
+  position: fixed;
+  z-index: 1200;
+  background-color: #ffffff;
+  /* display: flex; */
+  top: 0;
+  left: 0;
+  flex: 1 0 auto;
+  border-right: 1px solid var(--dark-gray);
+  background: #fff;
+  border-color: var(--dark-gray);
+}
+
+.kash-sidebar-heading {
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+  padding: 1.2rem;
+}
+
+.kash-sidebar > ul {
+  /* padding-left: 1rem; */
+  padding: 0;
+  margin: 0;
+}
+
+.kash-sidebar > ul > li {
+  list-style: none;
+  font-size: 1.3rem;
+  /* padding: 0.4rem; */
+  /* padding-left: 1rem; */
+  padding: 1rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.kash-sidebar > ul > li:hover {
+  background-color: rgb(214, 214, 214);
+}
+.kash-container {
+  display: flex;
+  background-color: var(--white);
+  /* height: 100vh; */
+}
+nav {
+  flex-shrink: 0;
+  width: 18rem;
+}
+main {
+  /* height: 90vh;
+  width: 70vw; */
+  /* width: 90vw; */
+  display: flex;
+  /* width: 100vw; */
+}
+
+.kash-main-container {
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  align-items: left;
+  /* padding-left: 2rem; */
+  padding: 1rem;
+  padding-top: 5rem;
+}
+
+.kash-main-container > p {
+  color: var(--gray);
+}
+.kash-logo {
+  width: 14rem;
+  padding: 0.576rem;
+  height: 3rem;
+}
+
+.kash-logo-container {
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.kash-components-list {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  /* gap: 0.5rem; */
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  color: var(--gray);
+  font-weight: 900;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.kash-header {
+  position: fixed;
+  top: 0;
+  height: 2rem;
+  /* box-shadow: 0.5rem 0.5rem 0.5rem gray; */
+  border-bottom: 1px solid var(--dark-gray);
+  background: #fff;
+  border-color: var(--dark-gray);
+  /* width: 100%; */
+  flex-shrink: 0;
+  display: flex;
+  left: auto;
+  right: 0;
+  z-index: 1100;
+  align-items: center;
+  justify-content: space-between;
+}
+.kash-header > .kash-input-container > input {
+  border: none;
+  padding: 0.5rem;
+  width: 30%;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+.kash-input-container > .fa-search {
+  color: var(--gray);
+}
+.kash-input-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-gray);
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+}
+.kash-header {
+  flex-shrink: 0;
+  width: calc(100% - 320px);
+  padding: 1.2rem;
+}
+
+.kash-content-right {
+  margin-left: auto;
+  min-width: 70vw;
+  position: relative;
+  /* margin-right: auto; */
+}
+
+/*typography*/
+.kash-h1 {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+
+.kash-h2 {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+}
+
+.kash-h3 {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+
+.kash-h4 {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+}
+
+.kash-h5 {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.kash-btn-text {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.kash-subtitle {
+  margin: 0px 0px 0.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+}
