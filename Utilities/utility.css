@@ -1,0 +1,66 @@
+/*border */
+.kash-border-sm {
+  border-style: solid;
+  border-color: var(--light-gray);
+}
+
+.kash-border-radius-sm {
+  border-radius: 1rem;
+}
+
+/*click */
+.kash-clickable {
+  cursor: pointer;
+}
+
+/* flex */
+.kash-flex {
+  display: flex;
+}
+.kash-flex-col {
+  flex-direction: column;
+}
+
+.kash-justify-center {
+  justify-content: center;
+}
+.kash-between {
+  justify-content: space-between;
+}
+.kash-evenly {
+  justify-content: space-evenly;
+}
+.kash-justify-left {
+  justify-content: left;
+}
+.kash-align-center {
+  align-items: center;
+}
+
+/* margins */
+.kash-m {
+  margin: calc(1.5 * var(--margin));
+}
+/*padding */
+.kash-p {
+  padding: calc(1.5 * var(--padding));
+}
+.kash-p-2 {
+}
+.kash-px {
+  padding-left: calc(1.5 * var(--padding));
+}
+
+/*gap*/
+.kash-gap {
+  gap: calc(0.5 * var(--spacing-unit));
+}
+
+.kash-text-left {
+  text-align: left;
+}
+.kash-text-center {
+  text-align: center;
+}
+
+/* width */

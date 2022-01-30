@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("./Utilities/utility.css");
+@import url("./Utilities/colors.css");
+@import url("./Utilities/typography.css");
 *,
 *::after,
 *::before {
@@ -9,32 +12,48 @@ body {
   font-family: "Roboto";
   margin: 0;
   height: 100vh;
-  width: 98vw;
 }
 :root {
   --blue: rgb(80, 80, 255);
   --dark-red: #d90429;
   --white: #ffffff;
-  --green: rgb(80, 255, 133);
+  --green: rgba(0, 161, 113, 0.74);
   --gray: #2b2d42;
   --light-red: #ef233c;
   --light-gray: #edf2f4;
   --dark-gray: #8d99ae;
+  --light-yellow: #fcd34d;
+  --spacing-unit: 1rem;
+  --margin: calc(1 * var(--spacing-unit));
+  --padding: calc(1 * var(--spacing-unit));
 }
 .kash-bg-color-primary {
   background-color: var(--blue);
 }
 .kash-bg-color-secondary {
-  background-color: var(--red);
+  background-color: var(--light-red);
 }
 .kash-bg-color-green {
   background-color: var(--green);
 }
-
+.kash-sidebar > ul > li > a {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: var(--gray);
+}
 .kash-clickable {
   cursor: pointer;
 }
-
+.kash-code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
 .kash-sidebar {
   height: 100vh;
   width: 18rem;
@@ -82,8 +101,11 @@ body {
 }
 .kash-container {
   display: flex;
-  background-color: var(--white);
-  /* height: 100vh; */
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 nav {
   flex-shrink: 0;
@@ -94,15 +116,12 @@ main {
   width: 70vw; */
   /* width: 90vw; */
   display: flex;
-  /* width: 100vw; */
 }
 
 .kash-main-container {
   /* padding: 2rem; */
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
-  align-items: left;
   /* padding-left: 2rem; */
   padding: 1rem;
   padding-top: 5rem;
@@ -182,73 +201,8 @@ main {
 
 .kash-content-right {
   margin-left: auto;
-  min-width: 70vw;
   position: relative;
   /* margin-right: auto; */
-}
-
-/*typography*/
-.kash-h1 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 6rem;
-  line-height: 1.167;
-  letter-spacing: -0.01562em;
-}
-
-.kash-h2 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 1.2;
-  letter-spacing: -0.00833em;
-}
-
-.kash-h3 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 1.167;
-  letter-spacing: 0em;
-}
-
-.kash-h4 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.125rem;
-  line-height: 1.235;
-  letter-spacing: 0.00735em;
-}
-
-.kash-h5 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.334;
-  letter-spacing: 0em;
-}
-
-.kash-btn-text {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  letter-spacing: 0.02857em;
-  text-transform: uppercase;
-  display: block;
-}
-
-.kash-subtitle {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.57;
-  letter-spacing: 0.00714em;
+  justify-content: center;
+  width: 75vw;
 }

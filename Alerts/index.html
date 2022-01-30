@@ -17,8 +17,159 @@
     <div id="kash-container" class="kash-container">
       <script src="../scripts/nav.js"></script>
       <main>
-        <div class="kash-main-container">
-          <h1>Alerts</h1>
+        <div class="kash-main-container kash-content-right">
+          <h1 class="kash-h2 kash-text-left">Alerts</h1>
+          <h3 class="kash-h5">Basic Alerts</h3>
+          <p class="kash-subtitle">Basic Alerts to display simple messages</p>
+          <div
+            class="kash-container kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <div
+              class="kash-alert kash-alert-error kash-flex kash-align-center kash-gap"
+            >
+              <i class="fa fa-exclamation-circle"></i>
+              This is an error alert — check it out!
+            </div>
+            <div
+              class="kash-alert kash-alert-success kash-flex kash-align-center kash-gap"
+            >
+              <i class="fa fa-check-circle"></i>
+              This is an Success alert — check it out!
+            </div>
+            <div
+              class="kash-alert kash-alert-warning kash-flex kash-align-center kash-gap"
+            >
+              <i class="fa fa-exclamation-triangle"></i>
+              This is an warning alert — check it out!
+            </div>
+            <div
+              class="kash-alert kash-alert-info kash-flex kash-align-center kash-gap"
+            >
+              <i class="fa fa-info-circle"></i>
+              This is an info alert — check it out!
+            </div>
+          </div>
+
+          <div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522kash-container%2520kash-flex-col%2520kash-justify-center%2520kash-align-center%2520kash-border-sm%2520kash-m%2520kash-p%2520kash-gap%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-error%2520kash-flex%2520kash-align-center%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-success%2520kash-flex%2520kash-align-center%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520Success%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-warning%2520kash-flex%2520kash-align-center%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520warning%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-info%2520kash-flex%2520kash-align-center%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 34rem;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h3 class="kash-h5">Alerts With Actions</h3>
+          <p class="kash-subtitle">Alerts having actions for acknowledgement</p>
+          <div
+            class="kash-container kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <div
+              class="kash-alert kash-alert-info kash-flex kash-align-center kash-gap kash-between"
+            >
+              <div class="kash-flex kash-gap kash-align-center">
+                <i class="fa fa-envelope"></i> You have a new Message
+              </div>
+              <a class="kash-clickable" onclick="clickExample()">Show</a>
+            </div>
+            <div
+              class="kash-alert kash-flex kash-align-center kash-gap kash-between kash-bg-red"
+            >
+              <div class="kash-flex kash-gap kash-align-center">
+                <i class="fa fa-envelope"></i> Mail Sent Successfully
+              </div>
+              <a class="kash-clickable" onclick="clickExample()">OK</a>
+            </div>
+          </div>
+          <div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522kash-container%2520kash-flex-col%2520kash-justify-center%2520kash-align-center%2520kash-border-sm%2520kash-m%2520kash-p%2520kash-gap%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-info%2520kash-flex%2520kash-align-center%2520kash-gap%2520kash-between%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-gap%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-envelope%2522%253E%253C%252Fi%253E%2520You%2520have%2520a%2520new%2520Message%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522kash-clickable%2522%2520onclick%253D%2522clickExample%28%29%2522%253E%250A%2520%2520%2520%2520%2520%2520Show%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-flex%2520kash-align-center%2520kash-gap%2520kash-between%2520kash-bg-red%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-gap%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-envelope%2522%253E%253C%252Fi%253E%2520Mail%2520Sent%2520Successfully%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522kash-clickable%2522%2520onclick%253D%2522clickExample%28%29%2522%253E%250A%2520%2520%2520%2520%2520%2520OK%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 34rem;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h3 class="kash-h5">Description</h3>
+          <p class="kash-subtitle">
+            Alerts with description to display messages
+          </p>
+          <div
+            class="kash-container kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <div
+              class="kash-alert kash-alert-error kash-flex kash-align-left kash-gap kash-flex-col"
+            >
+              <div class="kash-flex kash-gap">
+                <i class="fa fa-exclamation-circle"></i>
+                Error
+              </div>
+              <p class="kash-px">
+                This is an Error —
+                <a class="kash-clickable kash-text-bold">check it out!</a>
+              </p>
+            </div>
+            <div
+              class="kash-alert kash-alert-success kash-flex kash-align-left kash-gap kash-flex-col"
+            >
+              <div class="kash-flex kash-gap">
+                <i class="fa fa-check-circle"></i>
+                Success
+              </div>
+              <p class="kash-px">
+                This is an Success alert —
+                <a class="kash-clickable kash-text-bold">check it out!</a>
+              </p>
+            </div>
+            <div
+              class="kash-alert kash-alert-warning kash-flex kash-align-left kash-gap kash-flex-col"
+            >
+              <div class="kash-flex kash-gap">
+                <i class="fa fa-exclamation-triangle"></i>
+                Warning
+              </div>
+              <p class="kash-px">
+                This is an warning alert —
+                <a class="kash-clickable kash-text-bold">check it out!</a>
+              </p>
+            </div>
+            <div
+              class="kash-alert kash-alert-info kash-flex kash-align-left kash-gap kash-flex-col"
+            >
+              <div class="kash-flex kash-gap">
+                <i class="fa fa-info-circle"></i>
+                Info
+              </div>
+              <p class="kash-px">
+                This is an info alert —
+                <a class="kash-clickable kash-text-bold">check it out!</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522kash-container%2520kash-flex-col%2520kash-justify-center%2520kash-align-center%2520kash-border-sm%2520kash-m%2520kash-p%2520kash-gap%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-error%2520kash-flex%2520kash-align-left%2520kash-gap%2520kash-flex-col%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Error%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-px%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520Error%2520%25E2%2580%2594%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522kash-clickable%2520kash-text-bold%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-success%2520kash-flex%2520kash-align-left%2520kash-gap%2520kash-flex-col%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Success%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-px%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520Success%2520alert%2520%25E2%2580%2594%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522kash-clickable%2520kash-text-bold%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-warning%2520kash-flex%2520kash-align-left%2520kash-gap%2520kash-flex-col%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Warning%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-px%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520warning%2520alert%2520%25E2%2580%2594%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522kash-clickable%2520kash-text-bold%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-alert%2520kash-alert-info%2520kash-flex%2520kash-align-left%2520kash-gap%2520kash-flex-col%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Info%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-px%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522kash-clickable%2520kash-text-bold%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 62rem;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
         </div>
       </main>
     </div>

@@ -1,0 +1,8 @@
+.kash-color-red {
+  color: var(--light-red);
+}
+
+.kash-bg-red {
+  background-color: var(--light-red);
+  color: var(--white);
+}
