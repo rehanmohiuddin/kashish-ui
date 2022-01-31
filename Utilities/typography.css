@@ -67,3 +67,13 @@
 .kash-text-bold {
   font-weight: 900;
 }
+
+.kash-text-light {
+  color: var(--light-black);
+}
+.kash-text-white {
+  color: var(--white);
+}
+.kash-text-gray {
+  color: var(--gray);
+}

@@ -1,0 +1,83 @@
+.kash-card {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem var(--light-gray);
+  max-width: 100%;
+  background-color: var(--white);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.kash-card-upper {
+  position: relative;
+  max-width: 100%;
+}
+
+.kash-card-btn {
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.kash-card > .kash-card-upper > img {
+  height: 15rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+.kash-card-badge {
+  right: 0;
+  padding: 0.4rem;
+  font-size: small;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.1rem;
+  font-weight: bold;
+}
+
+.kash-card-max-w {
+  max-width: 23vw;
+}
+.kash-overlay-card {
+  display: grid;
+  background-color: var(--white);
+  padding: 10px;
+}
+.kash-card-background,
+.kash-card-content {
+  grid-row: 1;
+  grid-column: 1;
+}
+.kash-card-background {
+  background-color: black;
+  opacity: 0.9;
+}
+.kash-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: white;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+.kash-card-background > img {
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 20rem;
+}
+@media only screen and (max-width: 500px) {
+  .kash-card {
+    height: 100%;
+  }
+  .kash-card-max-w {
+    max-width: 100%;
+  }
+
+  .kash-card > .kash-card-upper > img {
+    height: auto;
+    width: 100%;
+  }
+}

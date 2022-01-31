@@ -9,6 +9,7 @@ const avatarIcon = document.createElement("i");
 const gettingStartedIcon = document.createElement("i");
 const toggleIcon = document.createElement("i");
 const downArrowIcon = document.createElement("i");
+const hamburgerIcon = document.createElement("i");
 
 const header = document.createElement("header");
 header.classList.add("kash-header");
@@ -26,25 +27,35 @@ header.appendChild(headerDiv);
 headerDiv.classList.add("kash-input-container");
 header.appendChild(headerDiv);
 header.appendChild(header_documentation_click);
+hamburgerIcon.classList.add("fa");
+hamburgerIcon.classList.add("fa-bars");
+header.appendChild(hamburgerIcon);
 
 const names = [
   { name: "Avatar", iconName: "fa-user-circle", route: "/Avatar" },
   { name: "Alerts", iconName: "fa-exclamation-circle", route: "/Alerts" },
+  { name: "Cards", iconName: "fa-id-card", route: "/Card" },
 ];
 
 const avatarList = document.createElement("a");
 const btn = document.createElement("button");
 const logoDiv = document.createElement("div");
+const logoHeaderDiv = document.createElement("div");
+const logoHeaderImage = document.createElement("img");
 const logo = document.createElement("img");
 const h3 = document.createElement("h3");
 const span = document.createElement("span");
 
 logoDiv.classList.add("kash-logo-container");
+logoHeaderDiv.classList.add("kash-logo-container");
 logo.src = "../Resources/Flash=Dark.svg";
+logoHeaderImage.src = "../Resources/Flash=Dark.svg";
 logo.classList.add("kash-logo");
+logoHeaderImage.classList.add("kash-logo");
 logoDiv.appendChild(logo);
+logoHeaderDiv.appendChild(logoHeaderImage);
 aside.appendChild(logoDiv);
-
+header.appendChild(logoHeaderDiv);
 aside.appendChild(upperUl);
 upperUl.appendChild(upperLi);
 upperLi.classList.add("kash-clickable");
