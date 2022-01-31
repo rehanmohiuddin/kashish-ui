@@ -1,1 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.kash-alert {
+  width: 60%;
+  min-height: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.kash-alert-error {
+  background-color: var(--light-red);
+  color: var(--white);
+  opacity: 0.9;
+}
+.kash-alert-success {
+  background-color: var(--green);
+  color: var(--white);
+  /* opacity: 0.9; */
+}
+.kash-alert-warning {
+  background-color: var(--light-yellow);
+  color: var(--white);
+  /* opacity: 0.9; */
+}
+.kash-alert-info {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
