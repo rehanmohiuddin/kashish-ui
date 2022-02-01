@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .kash-alert {
-  width: 60%;
   min-height: 1rem;
   padding: 1rem;
   border-radius: 0.4rem;
+  white-space: nowrap;
+  width: 80%;
+  min-width: 20rem;
 }
 
 .kash-alert-error {
@@ -25,4 +27,10 @@
 .kash-alert-info {
   background-color: var(--dark-gray);
   color: var(--white);
+}
+
+@media only screen and (max-width: 500px) {
+  .kash-alert {
+    width: 20rem;
+  }
 }

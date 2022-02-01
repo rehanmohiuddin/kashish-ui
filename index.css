@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("./Utilities/utility.css");
-@import url("./Utilities/colors.css");
 @import url("./Utilities/typography.css");
+@import url("./Alerts/index.css");
+@import url("./Card/index.css");
+@import url("./Utilities/colors.css");
+@import url("./Button/index.css");
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  font-family: "Roboto" sans-serif;
 }
 body {
   font-family: "Roboto";
@@ -23,6 +28,7 @@ body {
   --light-gray: #edf2f4;
   --dark-gray: #8d99ae;
   --light-yellow: #fcd34d;
+  --light-black: rgba(0, 0, 0, 0.6);
   --spacing-unit: 1rem;
   --margin: calc(1 * var(--spacing-unit));
   --padding: calc(1 * var(--spacing-unit));
@@ -100,22 +106,38 @@ body {
   background-color: rgb(214, 214, 214);
 }
 .kash-container {
-  display: flex;
+  padding: calc(0.5 * var(--spacing-unit));
+}
+
+.kash-container-root {
+  display: grid;
+  grid-gap: 1rem;
   justify-content: center;
   gap: 1.5rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
+  grid-template-columns: 15rem 1fr;
+  grid-template-areas:
+    "aside header"
+    "aside main"
+    "aside main"
+    "aside main";
 }
-nav {
+.kash-sidebar {
   flex-shrink: 0;
   width: 18rem;
+  grid-area: aside;
 }
 main {
-  /* height: 90vh;
-  width: 70vw; */
-  /* width: 90vw; */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: main;
+}
+header {
+  grid-area: header;
 }
 
 .kash-main-container {
@@ -124,7 +146,7 @@ main {
   flex-direction: column;
   /* padding-left: 2rem; */
   padding: 1rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 .kash-main-container > p {
@@ -195,80 +217,84 @@ main {
 }
 .kash-header {
   flex-shrink: 0;
-  width: calc(100% - 320px);
   padding: 1.2rem;
+  width: calc(100% - 320px);
 }
 
 .kash-content-right {
+  width: 80%;
   margin-left: auto;
-  position: relative;
-  /* margin-right: auto; */
-  justify-content: center;
-  width: 75vw;
-}
-
-/*typography*/
-.kash-h1 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 6rem;
-  line-height: 1.167;
-  letter-spacing: -0.01562em;
-}
-
-.kash-h2 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 1.2;
-  letter-spacing: -0.00833em;
-}
-
-.kash-h3 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 1.167;
-  letter-spacing: 0em;
-}
-
-.kash-h4 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.125rem;
-  line-height: 1.235;
-  letter-spacing: 0.00735em;
-}
-
-.kash-h5 {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.334;
-  letter-spacing: 0em;
-}
-
-.kash-btn-text {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  letter-spacing: 0.02857em;
-  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-right: auto;
   display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding-top: 100px; */
+  font-family: Arial;
+  max-width: 105ch;
+  position: relative;
 }
 
-.kash-subtitle {
-  margin: 0px 0px 0.35em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.57;
-  letter-spacing: 0.00714em;
+@media only screen and (min-width: 510px) {
+  .kash-header > .kash-logo-container,
+  .fa-bars {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .kash-container-root {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+    padding: 0;
+    margin: 0;
+  }
+  .kash-sidebar {
+    position: relative;
+    display: none;
+  }
+  .kash-header {
+    width: calc(100% - 0px) !important;
+    justify-content: flex-start;
+  }
+  .kash-logo {
+    padding: 0.4rem;
+  }
+  .kash-logo-container {
+    border: none;
+  }
+  .kash-header > .kash-logo-container,
+  .fa-bars {
+    display: block;
+  }
+
+  .kash-header > a,
+  .kash-header > .kash-input-container {
+    display: none;
+  }
+  .kash-header > .fa-bars {
+    position: absolute;
+    right: calc(1 * var(--spacing-unit));
+  }
+
+  .kash-border-sm {
+    border-left-style: none;
+    border-right-style: none;
+    /* width: 100%; */
+  }
+  .kash-container {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .kash-content-right {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 5rem;
+  }
 }
