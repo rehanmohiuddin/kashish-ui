@@ -35,6 +35,7 @@ const names = [
   { name: "Avatar", iconName: "fa-user-circle", route: "/Avatar" },
   { name: "Alerts", iconName: "fa-exclamation-circle", route: "/Alerts" },
   { name: "Cards", iconName: "fa-id-card", route: "/Card" },
+  { name: "Buttons", iconName: "fa-mouse-pointer", route: "/Button" },
 ];
 
 const avatarList = document.createElement("a");

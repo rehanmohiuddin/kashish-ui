@@ -104,6 +104,9 @@
 .kash-absolute {
   position: absolute;
 }
+.kash-relative {
+  position: relative;
+}
 
 /* shadow */
 
