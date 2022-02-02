@@ -5,6 +5,8 @@
 @import url("./Card/index.css");
 @import url("./Utilities/colors.css");
 @import url("./Button/index.css");
+@import url("./Badge/index.css");
+@import url("./Avatar/index.css");
 
 *,
 *::after,
