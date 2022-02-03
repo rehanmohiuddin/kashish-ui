@@ -37,6 +37,7 @@ const names = [
   { name: "Cards", iconName: "fa-id-card", route: "/Card" },
   { name: "Buttons", iconName: "fa-mouse-pointer", route: "/Button" },
   { name: "Badges", iconName: "fa-certificate", route: "/Badge" },
+  { name: "Input", iconName: "fa-text-height", route: "/Input" },
 ];
 
 const avatarList = document.createElement("a");

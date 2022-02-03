@@ -70,6 +70,9 @@
 .kash-p {
   padding: calc(1.5 * var(--padding));
 }
+.kash-p-sm {
+  padding: calc(0.5 * var(--padding));
+}
 .kash-p-0 {
   padding: 0;
 }
