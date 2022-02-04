@@ -34,3 +34,18 @@
   object-fit: cover;
   object-position: bottom;
 }
+
+@media only screen and (max-width: 500px) {
+  .kash-img-sm {
+    width: 40%;
+  }
+
+  .kash-img-md {
+    width: 60%;
+    height: 15rem;
+  }
+
+  .kash-img-xl {
+    width: 80%;
+  }
+}
