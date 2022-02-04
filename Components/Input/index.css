@@ -13,9 +13,7 @@
   transition: border-color 2s;
   display: flex;
 }
-.kash-flex {
-  width: 100%;
-}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select:focus,
   textarea:focus,
@@ -81,6 +79,9 @@ input {
 
 .kash-input-select > li > img {
   border: 2px solid var(--light-gray);
+}
+.kash-w-full {
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("./Utilities/utility.css");
 @import url("./Utilities/typography.css");
-@import url("./Alerts/index.css");
-@import url("./Card/index.css");
+@import url("./Components/Alerts/index.css");
+@import url("./Components/Card/index.css");
 @import url("./Utilities/colors.css");
-@import url("./Button/index.css");
-@import url("./Badge/index.css");
-@import url("./Avatar/index.css");
-@import url("./Input/index.css");
-
+@import url("./Components/Button/index.css");
+@import url("./Components/Badge/index.css");
+@import url("./Components/Avatar/index.css");
+@import url("./Components/Input/index.css");
+@import url("./Components/Image/index.css");
 *,
 *::after,
 *::before {
@@ -206,6 +206,8 @@ header {
   background-color: transparent;
   outline: none;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 100%;
 }
 .kash-input-container > .fa-search {
   color: var(--gray);

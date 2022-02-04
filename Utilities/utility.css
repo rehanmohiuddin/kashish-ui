@@ -16,6 +16,7 @@
 /* flex */
 .kash-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .kash-flex-col {
   flex-direction: column;
@@ -68,7 +69,7 @@
 }
 /*padding */
 .kash-p {
-  padding: calc(1.5 * var(--padding));
+  padding: calc(1 * var(--padding));
 }
 .kash-p-sm {
   padding: calc(0.5 * var(--padding));
@@ -80,6 +81,9 @@
 }
 .kash-px {
   padding-left: calc(1.5 * var(--padding));
+}
+.kash-pt-0 {
+  padding-top: 0;
 }
 
 /*gap*/

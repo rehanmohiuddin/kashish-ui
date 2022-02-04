@@ -1,0 +1,36 @@
+.kash-img-fluid {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.kash-img-200 {
+  width: 200px;
+  height: 200px;
+}
+
+.kash-rounded {
+  border-radius: 0.25rem;
+}
+
+.kash-rounded-xl {
+  border-radius: 50%;
+}
+
+.kash-img-sm {
+  width: 10rem;
+  height: 10rem;
+}
+
+.kash-img-md {
+  width: 15rem;
+  height: 15rem;
+}
+
+.kash-img-xl {
+  width: 20vw;
+  height: 40vh;
+  object-fit: cover;
+  object-position: bottom;
+}
