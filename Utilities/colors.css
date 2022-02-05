@@ -21,3 +21,11 @@
 .kash-bg-gray {
   background-color: var(--gray);
 }
+
+.kash-border-red {
+  border-color: var(--light-red);
+}
+
+.kash-border-yellow {
+  border-color: var(--light-yellow);
+}
