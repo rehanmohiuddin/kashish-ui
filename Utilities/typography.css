@@ -3,7 +3,7 @@
   margin: 0px 0px 0.35em;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1.167;
   letter-spacing: -0.01562em;
 }
@@ -76,4 +76,13 @@
 }
 .kash-text-gray {
   color: var(--gray);
+}
+
+.kash-text-center {
+  text-align: center;
+}
+
+.kash-highlight {
+  background-color: var(--dark-gray);
+  padding: 0.3rem;
 }

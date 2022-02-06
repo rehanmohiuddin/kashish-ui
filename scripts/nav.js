@@ -49,6 +49,7 @@ const names = [
   { name: "Badges", iconName: "fa-certificate", route: "/Badge" },
   { name: "Input", iconName: "fa-text-height", route: "/Input" },
   { name: "Images", iconName: "fa-file-image", route: "/Image" },
+  { name: "Typography", iconName: "fa-text", route: "/Typography" },
 ];
 
 const avatarList = document.createElement("a");
@@ -96,6 +97,97 @@ aside.appendChild(ul);
 aside.classList.add("kash-sidebar");
 
 li.classList.add("kash-clickable");
+
+const mobNav = document.createElement("div");
+const _ul = document.createElement("ul");
+const _li = document.createElement("li");
+mobNav.classList.add("kash-nav-mob");
+const startIcon = document.createElement("i");
+startIcon.classList.add("fa");
+startIcon.classList.add("fa--book");
+mobNav.appendChild(_ul);
+_ul.appendChild(_li);
+_li.classList.add("kash-flex");
+_li.classList.add("kash-h5");
+_li.classList.add("kash-gap");
+_li.classList.add("kash-align-center");
+_li.appendChild(gettingStartedIcon);
+_li.innerHTML = _li.innerHTML + "Getting Started";
+const __li = document.createElement("li");
+__li.classList.add("kash-flex");
+__li.classList.add("kash-h5");
+__li.classList.add("kash-gap");
+__li.classList.add("kash-align-center");
+__li.classList.add("kash-between");
+__li.classList.add("kash-mt-3");
+const _div = document.createElement("div");
+_div.appendChild(toggleIcon);
+_div.innerHTML = _div.innerHTML + "Components";
+_div.classList.add("kash-flex");
+_div.classList.add("kash-align-center");
+_div.classList.add("kash-gap");
+__li.appendChild(_div);
+const downIcon = document.createElement("i");
+const leftIcon = document.createElement("i");
+downIcon.classList.add("fa");
+leftIcon.classList.add("fa");
+downIcon.classList.add("fa-chevron-right");
+leftIcon.classList.add("fa-chevron-left");
+__li.appendChild(downIcon);
+_ul.appendChild(__li);
+const __ul = document.createElement("ul");
+__ul.classList.add("kash-mx");
+__ul.classList.add("kash-m");
+__ul.classList.add("kash-flex");
+__ul.classList.add("kash-flex-col");
+__ul.classList.add("kash-gap-2");
+__ul.style.display = "none";
+__ul.id = "comp-list";
+// __ul.classList.add("kash-align-center");
+downIcon.onclick = () => {
+  __ul.style.display = __ul.style.display === "flex" ? "none" : "flex";
+  if (downIcon.classList.contains("fa-chevron-right")) {
+    downIcon.classList.remove("fa-chevron-right");
+    downIcon.classList.add("fa-chevron-down");
+    setTimeout(() => {
+      __ul.classList.add("comp");
+    }, 100);
+  } else {
+    downIcon.classList.add("fa-chevron-right");
+    downIcon.classList.remove("fa-chevron-down");
+  }
+};
+
+names.forEach((_name) => {
+  const li = document.createElement("li");
+  const icon = document.createElement("i");
+  const a = document.createElement("a");
+  a.href = "http://" + window.location.host + "/Components" + _name.route;
+  icon.classList.add("fa");
+  icon.classList.add(_name.iconName);
+  li.classList.add("kash-flex");
+  li.classList.add("kash-h5");
+  li.classList.add("kash-gap");
+  li.classList.add("kash-align-center");
+  li.appendChild(icon);
+  li.appendChild(a);
+  __ul.appendChild(li);
+  a.innerHTML = a.innerHTML + _name.name;
+  a.classList.add("kash-a-none");
+});
+_ul.appendChild(__ul);
+nav.appendChild(mobNav);
+
+hamburgerIcon.onclick = () => {
+  mobNav.style.display = mobNav.style.display === "block" ? "none" : "block";
+  setTimeout(() => {
+    mobNav.classList.contains("nav-left")
+      ? mobNav.classList.remove("nav-left")
+      : mobNav.classList.add("nav-left");
+  }, 100);
+};
+hamburgerIcon.id = "bar-btn";
+mobNav.style.display = "none";
 
 names.forEach((_name) => {
   const _li = document.createElement("li");

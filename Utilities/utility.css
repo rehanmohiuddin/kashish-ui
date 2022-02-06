@@ -16,11 +16,14 @@
 /* flex */
 .kash-flex {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .kash-flex-col {
   flex-direction: column;
   display: flex;
+}
+.kash-flex-wrap {
+  flex-wrap: wrap;
 }
 
 .kash-justify-center {
@@ -67,6 +70,9 @@
 .kash-mt {
   margin-top: calc(2 * var(--spacing-unit));
 }
+.kash-mx {
+  margin-left: calc(1.5 * var(--spacing-unit));
+}
 /*padding */
 .kash-p {
   padding: calc(1 * var(--padding));
@@ -92,6 +98,9 @@
 }
 .kash-gap-3 {
   gap: calc(3 * var(--spacing-unit));
+}
+.kash-gap-2 {
+  gap: calc(1 * var(--spacing-unit));
 }
 
 .kash-text-left {
@@ -125,4 +134,9 @@
 }
 .kash-shadow-dark {
   box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem var(--dark-gray);
+}
+
+.kash-a-none {
+  text-decoration: none;
+  color: var(--gray);
 }
