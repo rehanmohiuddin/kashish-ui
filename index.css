@@ -9,6 +9,8 @@
 @import url("./Components/Avatar/index.css");
 @import url("./Components/Input/index.css");
 @import url("./Components/Image/index.css");
+@import url("./Components/Typography/index.css");
+@import url("./Components/Modal/index.css");
 *,
 *::after,
 *::before {
@@ -19,7 +21,7 @@
 body {
   font-family: "Roboto";
   margin: 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 :root {
   --blue: rgb(80, 80, 255);
@@ -237,7 +239,7 @@ header {
   /* padding-top: 100px; */
   font-family: Arial;
   max-width: 105ch;
-  position: relative;
+  /* position: relative; */
 }
 
 @media only screen and (min-width: 510px) {
@@ -322,10 +324,6 @@ header {
 /* .kash-nav-mob {
   background-color: #2b2d42;
 } */
-.comp {
-  opacity: 0.5;
-  transition: opacity 500ms;
-}
 .nav-left {
   left: 0;
   transition: left 500ms;
