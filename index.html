@@ -19,36 +19,74 @@
     <title>Kashish Component Library</title>
   </head>
   <body>
-    <div id="kash-container" class="kash-container-root">
-      <script src="./scripts/nav.js"></script>
-      <!-- <nav>
-        <div class="kash-nav-mob">
-          <ul>
-            <li class="kash-flex kash-h5 kash-gap kash-align-center">
-              <i class="fa fa-book"></i>
-              Getting started
-            </li>
-            <li
-              class="kash-flex kash-h5 kash-gap kash-align-center kash-between kash-mt-3"
-            >
-              <div>
-                <i class="fa fa-toggle-on"></i>
-                Components
-              </div>
-              <i class="fa fa-chevron-down"></i>
-            </li>
-            <ul class="kash-mx kash-m">
-              <li class="kash-flex kash-h5 kash-gap kash-align-center">
-                <i class="fa fa-user-circle"></i>
-                Avatar
-              </li>
-            </ul>
-          </ul>
+    <div id="kash-container" class="kash-documentation">
+      <!-- <script src="./scripts/nav.js"></script> -->
+      <nav class="nav-bar">
+        <img src="./Resources/Flash=Dark.svg" />
+        <div>
+          <a href="./Components/Alerts/">Docs</a>
+          <a href="https://github.com/rehanmohiuddin/kashish-ui">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://twitter.com/rehan_4942">
+            <i class="fa fa-twitter"></i>
+          </a>
         </div>
-      </nav> -->
-      <main>
-        <div class="kash-main-container kash-content-right"></div>
-      </main>
+      </nav>
+      <div class="kash-main-container documentation kash-align-center">
+        <div class="kash-pt">
+          <h2 class="kash-h2 kash-text-center kash-text-bold heading">
+            Build fast, responsive sites with
+            <h2
+              class="kash-h2 kash-text-gray kash-text-center kash-text-bold heading"
+            >
+              KASHISH UI
+            </h2>
+          </h2>
+          <div
+            class="kash-h4 subheading kash-text-bold-sm kash-text-light kash-text-center"
+          >
+            Get started with Kashish UI, the most easy framework for building
+            responsive, <br />
+            mobile-first sites, with Clean UI and a template starter page.
+          </div>
+        </div>
+        <div class="kash-h5 kash-text-bold kash-pt">CDN</div>
+        <div class="kash-text-subtitle kash-text-light installation">
+          To Get In Your Project Copy & Paste This Code in
+          <code class="kash-code">index.html</code>
+        </div>
+        <div class="kash-code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fkashish-ui.netlify.app%252Findex.css%2522%253E"
+            style="
+              width: 100%;
+              height: 30vh;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="kash-flex kash-align-center">
+          <button id="get_started" class="kash-btn kash-btn-contained">
+            Get Started
+          </button>
+          <button class="kash-btn kash-btn-outlined">Github</button>
+        </div>
+      </div>
     </div>
+    <script>
+      const _btns = document.getElementsByClassName("kash-btn");
+      Array.from(_btns).forEach((_btn) => {
+        _btn.onclick = () =>
+          (window.location.href =
+            _btn.id === "get_started"
+              ? "/Components/Avatar"
+              : "https://github.com/rehanmohiuddin/kashish-ui");
+      });
+    </script>
   </body>
 </html>

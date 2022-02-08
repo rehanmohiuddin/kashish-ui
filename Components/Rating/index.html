@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="../../index.css" />
+
+    <title>Rating</title>
+  </head>
+  <body>
+    <div id="kash-container" class="kash-container-root">
+      <script src="../../scripts/nav.js"></script>
+      <main>
+        <div class="kash-main-container kash-content-right">
+          <h1 class="kash-h2 kash-text-left">Rating</h1>
+          <div class="kash-p">
+            <h3 class="kash-h5">Rating Stars</h3>
+            <p class="kash-subtitle">Rating Based On Stars</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <div class="kash-subtitle">Rate The Food</div>
+            <div class="rating kash-flex kash-align-center kash-gap kash-p">
+              <i id="1" class="fa fa-star star"></i>
+              <i id="2" class="fa fa-star star"></i>
+              <i id="3" class="fa fa-star star"></i>
+              <i id="4" class="fa fa-star star"></i>
+              <i id="5" class="fa fa-star star"></i>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2520kash-flex%2520kash-align-center%2520kash-gap%2520kash-p%2522%253E%250A%2520%2520%253Ci%2520id%253D%25221%2522%2520class%253D%2522fa%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520id%253D%25222%2522%2520class%253D%2522fa%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520id%253D%25223%2522%2520class%253D%2522fa%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520id%253D%25224%2522%2520class%253D%2522fa%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520id%253D%25225%2522%2520class%253D%2522fa%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cscript%253E%250Aconst%2520starRating%2520%253D%2520%28className%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520const%2520stars%2520%253D%2520document.getElementsByClassName%28className%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520Array.from%28stars%29.forEach%28%28_star%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520_star.onclick%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520console.log%28%2522Click%2522%252C%2520_star%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Array.from%28stars%29.forEach%28%28__star%29%2520%253D%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520__star.classList.remove%28%2522kash-star-checked%2522%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520const%2520starNum%2520%253D%2520Number%28_star.id%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28let%2520i%2520%253D%25200%253B%2520i%2520%253C%253D%2520starNum%2520-%25201%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Array.from%28stars%29%255Bi%255D.classList.add%28%2522kash-star-checked%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%2520100%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%29%253B%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520starRating%28%2522star%2522%29%253B%250A%253C%252Fscript%253E%250A"
+              style="
+                width: 100%;
+                height: 95vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="kash-p">
+            <h3 class="kash-h5">Rating Emoji</h3>
+            <p class="kash-subtitle">Rating Based On Emoji</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <div class="kash-h5 kash-text-bold">Rate The Product</div>
+            <div class="rating kash-flex kash-align-center kash-gap kash-p">
+              <div
+                class="emoji kash-flex kash-flex-col kash-align-center"
+                id="1"
+              >
+                <div></div>
+                <p class="emoji-p kash-text-subtitle">BAD</p>
+              </div>
+              <div
+                class="emoji kash-flex kash-flex-col kash-align-center"
+                id="1"
+              >
+                <div></div>
+                <p class="emoji-p kash-text-subtitle">Not Good</p>
+              </div>
+              <div
+                class="emoji kash-flex kash-flex-col kash-align-center"
+                id="1"
+              >
+                <div></div>
+                <p class="emoji-p kash-text-subtitle">OK</p>
+              </div>
+              <div
+                class="emoji kash-flex kash-flex-col kash-align-center"
+                id="1"
+              >
+                <div></div>
+                <p class="emoji-p kash-text-subtitle">Nice</p>
+              </div>
+              <div
+                class="emoji kash-flex kash-flex-col kash-align-center"
+                id="1"
+              >
+                <div></div>
+                <p class="emoji-p kash-text-subtitle">Loved It</p>
+              </div>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2520kash-flex%2520kash-align-center%2520kash-gap%2520kash-p%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522emoji%2520kash-flex%2520kash-flex-col%2520kash-align-center%2522%2520id%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522emoji-p%2520kash-text-subtitle%2522%253EBAD%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522emoji%2520kash-flex%2520kash-flex-col%2520kash-align-center%2522%2520id%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522emoji-p%2520kash-text-subtitle%2522%253ENot%2520Good%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522emoji%2520kash-flex%2520kash-flex-col%2520kash-align-center%2522%2520id%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522emoji-p%2520kash-text-subtitle%2522%253EOK%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522emoji%2520kash-flex%2520kash-flex-col%2520kash-align-center%2522%2520id%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522emoji-p%2520kash-text-subtitle%2522%253ENice%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522emoji%2520kash-flex%2520kash-flex-col%2520kash-align-center%2522%2520id%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522emoji-p%2520kash-text-subtitle%2522%253ELoved%2520It%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%253E%250A%2520%2520%2509const%2520emojis%2520%253D%2520document.getElementsByClassName%28%2522emoji%2522%29%253B%250A%2520%2520%2520%2520%2520%2520Array.from%28emojis%29.forEach%28%28_emoji%252C%2520index%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520_emoji.children%255B0%255D.innerHTML%2520%253D%2520%2522%2526%2523%2522%2520%252B%2520reactionEmojis%255Bindex%255D%253B%250A%2520%2520%2520%2520%2520%2520%257D%29%253B%250A%253C%252Fscript%253E%250A"
+              style="
+                width: 100%;
+                height: 100vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="kash-p">
+            <h3 class="kash-h5">Rating Emoji</h3>
+            <p class="kash-subtitle">Rating Based On Emoji</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <div class="kash-h5 kash-text-bold">Rate The Product</div>
+            <div
+              class="kash-rating-container kash-flex kash-align-center kash-gap kash-p"
+            >
+              <div class="kash-rating-card">
+                <div
+                  id="kash-rating-selected"
+                  class="kash-rating-selected kash-subtitle"
+                ></div>
+                <div class="rating kash-flex kash-align-center kash-gap kash-p">
+                  <i id="star-2-1" class="fa fa-star star-2"></i>
+                  <i id="star-2-2" class="fa fa-star star-2"></i>
+                  <i id="star-2-3" class="fa fa-star star-2"></i>
+                  <i id="star-2-4" class="fa fa-star star-2"></i>
+                  <i id="star-2-5" class="fa fa-star star-2"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522kash-rating-container%2520kash-flex%2520kash-align-center%2520kash-gap%2520kash-p%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-rating-card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520id%253D%2522kash-rating-selected%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522kash-rating-selected%2520kash-subtitle%2522%250A%2520%2520%2520%2520%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520kash-flex%2520kash-align-center%2520kash-gap%2520kash-p%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520id%253D%2522star-2-1%2522%2520class%253D%2522fa%2520fa-star%2520star-2%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520id%253D%2522star-2-2%2522%2520class%253D%2522fa%2520fa-star%2520star-2%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520id%253D%2522star-2-3%2522%2520class%253D%2522fa%2520fa-star%2520star-2%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520id%253D%2522star-2-4%2522%2520class%253D%2522fa%2520fa-star%2520star-2%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520id%253D%2522star-2-5%2522%2520class%253D%2522fa%2520fa-star%2520star-2%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%253E%250A%2520%2520%2520const%2520ratings%2520%253D%2520document.getElementsByClassName%28%2522star-2%2522%29%253B%250A%2520%2520%2520%2520%2520%2520const%2520ratingSelected%2520%253D%2520document.getElementById%28%2522kash-rating-selected%2522%29%253B%250A%2520%2520%2520%2520%2520%2520const%2520reactionEmojis%2520%253D%2520%255B%2522128548%2522%252C%2520%2522128577%2522%252C%2520%2522128578%2522%252C%2520%2522128522%2522%252C%2520%2522129321%2522%255D%253B%250A%2520%2520%2520%2520%2520%2520document.getElementById%28%2522kash-rating-selected%2522%29.innerHTML%2520%253D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522%2526%2523%2522%2520%252B%2520reactionEmojis%255B0%255D%253B%250A%2520%2520%2520%2520%2520%2520let%2520prevRatingSelected%253B%250A%2520%2520%2520%2520%2520%2520Array.from%28ratings%29.forEach%28%28_rating%252C%2520index%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520_rating.onclick%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratingSelected.classList.remove%28%2522kash-rating-selected-animate%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520_rating.classList.add%28%2522kash-star-checked%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520setTimeout%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28%29%2520%253D%253E%2520ratingSelected.classList.add%28%2522kash-rating-selected-animate%2522%29%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252050%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratingSelected.innerHTML%2520%253D%2520%2522%2526%2523%2522%2520%252B%2520reactionEmojis%255Bindex%255D%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28prevRatingSelected%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratings%255BprevRatingSelected%255D.classList.remove%28%2522kash-star-checked%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520prevRatingSelected%2520%253D%2520_rating.id%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520%257D%29%253B%250A%253C%252Fscript%253E%250A"
+              style="
+                width: 100%;
+                height: 100vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      const starRating = (className) => {
+        const stars = document.getElementsByClassName(className);
+        Array.from(stars).forEach((_star) => {
+          _star.onclick = () => {
+            console.log("Click", _star);
+            Array.from(stars).forEach((__star) =>
+              __star.classList.remove("kash-star-checked")
+            );
+            const starNum = Number(_star.id);
+            for (let i = 0; i <= starNum - 1; i++) {
+              setTimeout(() => {
+                Array.from(stars)[i].classList.add("kash-star-checked");
+              }, 100);
+            }
+          };
+        });
+      };
+      starRating("star");
+      const ratings = document.getElementsByClassName("star-2");
+      const ratingSelected = document.getElementById("kash-rating-selected");
+      const reactionEmojis = ["128548", "128577", "128578", "128522", "129321"];
+      document.getElementById("kash-rating-selected").innerHTML =
+        "&#" + reactionEmojis[0];
+      let prevRatingSelected;
+      Array.from(ratings).forEach((_rating, index) => {
+        _rating.onclick = () => {
+          ratingSelected.classList.remove("kash-rating-selected-animate");
+          _rating.classList.add("kash-star-checked");
+          setTimeout(
+            () => ratingSelected.classList.add("kash-rating-selected-animate"),
+            50
+          );
+          ratingSelected.innerHTML = "&#" + reactionEmojis[index];
+          if (prevRatingSelected) {
+            ratings[prevRatingSelected].classList.remove("kash-star-checked");
+          }
+          prevRatingSelected = _rating.id;
+        };
+      });
+      const emojis = document.getElementsByClassName("emoji");
+      Array.from(emojis).forEach((_emoji, index) => {
+        _emoji.children[0].innerHTML = "&#" + reactionEmojis[index];
+      });
+    </script>
+  </body>
+</html>
