@@ -378,11 +378,11 @@ header {
     margin-right: 0;
     padding-top: calc(5 * var(--padding));
   }
-  .heading {
-    font-size: 2rem;
-  }
   .subheading {
     font-size: 1rem;
+  }
+  .heading {
+    font-size: 2rem;
   }
   .installation {
     text-align: center;
