@@ -282,6 +282,7 @@ header {
   .kash-header > .fa-bars {
     position: absolute;
     right: calc(1 * var(--spacing-unit));
+    padding: calc(1 * var(--spacing-unit));
   }
 
   .kash-border-sm {
@@ -302,4 +303,47 @@ header {
     margin-right: 0;
     padding-top: 5rem;
   }
+}
+
+/* mobile nav */
+
+.kash-nav-mob {
+  position: absolute;
+  background-color: var(--light-gray);
+  width: 100%;
+  height: 100%;
+  color: var(--gray);
+  top: 8vh;
+  display: block;
+  z-index: 1000;
+  transition: all 0.3s;
+  left: -100vw;
+}
+/* .kash-nav-mob {
+  background-color: #2b2d42;
+} */
+.comp {
+  opacity: 0.5;
+  transition: opacity 500ms;
+}
+.nav-left {
+  left: 0;
+  transition: left 500ms;
+}
+
+.kash-nav-mob:focus {
+  background-color: #2b2d42;
+}
+
+#bar-btn:checked ~ .kash-header {
+  background-color: #2b2d42;
+}
+
+.kash-nav-mob > ul {
+  padding: 2rem;
+  height: 100%;
+}
+
+.kash-nav-mob > ul > li {
+  list-style: none;
 }
