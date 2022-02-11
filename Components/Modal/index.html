@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="../../index.css" />
+
+    <title>Modal</title>
+  </head>
+  <body>
+    <div id="kash-container" class="kash-container-root">
+      <script src="../../scripts/nav.js"></script>
+      <main>
+        <div class="kash-main-container kash-content-right">
+          <h1 class="kash-h2 kash-text-left">Modal</h1>
+          <div class="kash-p">
+            <h3 class="kash-h5">Modal</h3>
+            <p class="kash-subtitle">Modal Component</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <button id="kash-modal-open" class="kash-btn kash-btn-contained">
+              Open
+            </button>
+            <div id="kash-modal" class="kash-modal-container">
+              <div class="kash-modal">
+                <div
+                  class="kash-modal-header kash-p kash-flex kash-between kash-align-center"
+                >
+                  <p class="kash-h5">Modal Header</p>
+                  <i class="fa fa-times-circle"></i>
+                </div>
+                <div class="kash-modal-body">
+                  <p class="kash-subtitle">Modal body text goes here.</p>
+                </div>
+                <div
+                  class="kash-modal-footer kash-flex kash-align-center kash-justify-end"
+                >
+                  <button
+                    id="kash-modal-close"
+                    class="kash-btn kash-btn-outlined"
+                  >
+                    Close
+                  </button>
+                  <button class="kash-btn kash-btn-contained">
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522kash-modal%2522%2520class%253D%2522kash-modal-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-modal-header%2520kash-p%2520kash-flex%2520kash-between%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-h5%2522%253EModal%2520Header%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-subtitle%2522%253EModal%2520body%2520text%2520goes%2520here.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-modal-footer%2520kash-flex%2520kash-align-center%2520kash-justify-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522kash-modal-close%2522%2520class%253D%2522kash-btn%2520kash-btn-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Close%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522kash-btn%2520kash-btn-contained%2522%253ESave%2520Changes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 70vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="kash-p">
+            <h3 class="kash-h5">Modal</h3>
+            <p class="kash-subtitle">Modal At Top Component</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <button id="kash-modal-open-1" class="kash-btn kash-btn-contained">
+              Open
+            </button>
+            <div id="kash-modal-1" class="kash-modal-container">
+              <div class="kash-modal kash-modal-top">
+                <div
+                  class="kash-modal-header kash-p kash-flex kash-between kash-align-center"
+                >
+                  <p class="kash-h5">Modal Header</p>
+                  <i class="fa fa-times-circle"></i>
+                </div>
+                <div class="kash-modal-body">
+                  <p class="kash-subtitle">Modal body text goes here.</p>
+                </div>
+                <div
+                  class="kash-modal-footer kash-flex kash-align-center kash-justify-end"
+                >
+                  <button
+                    id="kash-modal-close-1"
+                    class="kash-btn kash-btn-outlined"
+                  >
+                    Close
+                  </button>
+                  <button class="kash-btn kash-btn-contained">
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522kash-modal%2522%2520class%253D%2522kash-modal-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522kash-modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-modal-header%2520kash-p%2520kash-flex%2520kash-between%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-h5%2522%253EModal%2520Header%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-subtitle%2522%253EModal%2520body%2520text%2520goes%2520here.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-modal-footer%2520kash-flex%2520kash-align-center%2520kash-justify-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522kash-modal-close%2522%2520class%253D%2522kash-btn%2520kash-btn-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Close%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522kash-btn%2520kash-btn-contained%2522%253ESave%2520Changes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 70vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      const Modal = ({ modalID, modalBtnID, closeModalID }) => {
+        const modal = document.getElementById(modalID);
+        const modalBtn = document.getElementById(modalBtnID);
+        const closeModal = document.getElementById(closeModalID);
+        modalBtn.onclick = () => {
+          modal.style.display = "flex";
+          setTimeout(() => {
+            modal.children[0].classList.add("kash-modal-animate");
+          }, 100);
+        };
+        closeModal.onclick = () => {
+          modal.style.display = "none";
+          setTimeout(() => {
+            modal.children[0].classList.remove("kash-modal-animate");
+          }, 100);
+        };
+      };
+      Modal({
+        modalID: "kash-modal",
+        modalBtnID: "kash-modal-open",
+        closeModalID: "kash-modal-close",
+      });
+      Modal({
+        modalID: "kash-modal-1",
+        modalBtnID: "kash-modal-open-1",
+        closeModalID: "kash-modal-close-1",
+      });
+    </script>
+  </body>
+</html>

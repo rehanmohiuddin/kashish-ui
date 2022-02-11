@@ -50,6 +50,7 @@ const names = [
   { name: "Input", iconName: "fa-text-height", route: "/Input" },
   { name: "Images", iconName: "fa-file-image", route: "/Image" },
   { name: "Typography", iconName: "fa-text", route: "/Typography" },
+  { name: "Modal", iconName: "fa-window-maximize", route: "/Modal" },
 ];
 
 const avatarList = document.createElement("a");
