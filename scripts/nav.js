@@ -10,7 +10,6 @@ const gettingStartedIcon = document.createElement("i");
 const toggleIcon = document.createElement("i");
 const downArrowIcon = document.createElement("i");
 const hamburgerIcon = document.createElement("i");
-
 const header = document.createElement("header");
 header.classList.add("kash-header");
 const headerDiv = document.createElement("div");
@@ -31,6 +30,17 @@ hamburgerIcon.classList.add("fa");
 hamburgerIcon.classList.add("fa-bars");
 header.appendChild(hamburgerIcon);
 
+const link = document.createElement("link");
+const cssFile = document.createElement("link");
+link.rel = "stylesheet";
+cssFile.rel = "stylesheet";
+
+link.href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
+link.integrity =
+  "sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p";
+link.crossOrigin = "anonymous";
+document.getElementsByTagName("head")[0].appendChild(link);
+
 const names = [
   { name: "Avatar", iconName: "fa-user-circle", route: "/Avatar" },
   { name: "Alerts", iconName: "fa-exclamation-circle", route: "/Alerts" },
@@ -38,6 +48,7 @@ const names = [
   { name: "Buttons", iconName: "fa-mouse-pointer", route: "/Button" },
   { name: "Badges", iconName: "fa-certificate", route: "/Badge" },
   { name: "Input", iconName: "fa-text-height", route: "/Input" },
+  { name: "Images", iconName: "fa-file-image", route: "/Image" },
 ];
 
 const avatarList = document.createElement("a");
@@ -51,8 +62,8 @@ const span = document.createElement("span");
 
 logoDiv.classList.add("kash-logo-container");
 logoHeaderDiv.classList.add("kash-logo-container");
-logo.src = "../Resources/Flash=Dark.svg";
-logoHeaderImage.src = "../Resources/Flash=Dark.svg";
+logo.src = "../../Resources/Flash=Dark.svg";
+logoHeaderImage.src = "../../Resources/Flash=Dark.svg";
 logo.classList.add("kash-logo");
 logoHeaderImage.classList.add("kash-logo");
 logoDiv.appendChild(logo);
@@ -92,7 +103,7 @@ names.forEach((_name) => {
   const a = document.createElement("a");
   ul.appendChild(_li);
   a.appendChild(Icon);
-  a.href = "http://" + window.location.host + _name.route;
+  a.href = "http://" + window.location.host + "/Components" + _name.route;
   _li.appendChild(a);
   Icon.classList.add("fa");
   Icon.classList.add(_name.iconName);
