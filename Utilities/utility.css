@@ -56,6 +56,9 @@
 .kash-m {
   margin: calc(1.5 * var(--margin));
 }
+.kash-m-3 {
+  margin: calc(2.5 * var(--margin));
+}
 .kash-m-0 {
   margin: 0;
 }
@@ -84,13 +87,23 @@
 .kash-p-0 {
   padding: 0;
 }
-.kash-p-2 {
-}
+
 .kash-px {
   padding-left: calc(1.5 * var(--padding));
 }
 .kash-pt-0 {
   padding-top: 0;
+}
+
+.kash-pt {
+  padding-top: calc(1.3 * var(--padding));
+}
+.kash-pb {
+  padding-bottom: calc(1.3 * var(--padding));
+}
+
+.kash-m-0 {
+  margin: 0;
 }
 
 /*gap*/

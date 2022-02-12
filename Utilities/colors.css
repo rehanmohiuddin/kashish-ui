@@ -29,3 +29,7 @@
 .kash-border-yellow {
   border-color: var(--light-yellow);
 }
+
+.kash-bg-white {
+  background-color: var(--white);
+}

@@ -51,6 +51,7 @@ const names = [
   { name: "Images", iconName: "fa-file-image", route: "/Image" },
   { name: "Typography", iconName: "fa-text", route: "/Typography" },
   { name: "Modal", iconName: "fa-window-maximize", route: "/Modal" },
+  { name: "Rating", iconName: "fa-star-half-alt", route: "/Rating" },
 ];
 
 const avatarList = document.createElement("a");
@@ -80,6 +81,7 @@ gettingStartedIcon.classList.add("fa");
 gettingStartedIcon.classList.add("fa-book");
 h3.appendChild(gettingStartedIcon);
 h3.innerHTML = h3.innerHTML + " Getting Started";
+upperLi.onclick = () => (window.location.href = "/");
 
 btn.classList.add("kash-components-list");
 btn.appendChild(span);
