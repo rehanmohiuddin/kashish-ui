@@ -1,0 +1,65 @@
+.kash-star-checked {
+  color: var(--dark-red) !important;
+  transition: color 500ms;
+}
+
+.kash-rating-container {
+  min-height: 10vh;
+}
+
+.fa-star {
+  cursor: pointer;
+  font-size: large;
+}
+
+.emoji > div {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: font-size 500ms;
+}
+.emoji > p {
+  font-size: small;
+  font-weight: bold;
+  color: transparent;
+  visibility: hidden;
+  transition: all 500ms;
+  opacity: 0.5;
+}
+
+.emoji > div:hover + .emoji-p {
+  visibility: visible;
+  color: var(--dark-gray);
+  opacity: 1;
+  transition: color 500ms;
+}
+
+.emoji > div:hover {
+  font-size: 4rem;
+  transition: font-size 500ms;
+}
+
+.kash-rating-card {
+  min-height: 10vh;
+  width: 100%;
+  background-color: var(--white);
+  padding: calc(1.5 * var(--spacing-unit));
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem var(--dark-gray);
+  border-radius: 0.3rem;
+}
+
+.kash-rating-card > .kash-rating-selected {
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+}
+.kash-rating-selected-animate {
+  animation: leftToRight 0.7s 1;
+}
+@keyframes leftToRight {
+  0% {
+    top: -1vh;
+  }
+  100% {
+    top: 0;
+  }
+}
