@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="../../index.css" />
+
+    <title>Modal</title>
+  </head>
+  <body>
+    <div id="kash-container" class="kash-container-root">
+      <script src="../../scripts/nav.js"></script>
+      <main>
+        <div class="kash-main-container kash-content-right">
+          <h1 class="kash-h2 kash-text-left">Snackabr</h1>
+          <h3 class="kash-h5">Simple snackbar</h3>
+          <p class="kash-subtitle">
+            Snackbars provide brief notifications. The component is also known
+            as a toast.
+          </p>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <button
+              id="kash-snackbar-open-btn-1"
+              class="kash-btn kash-btn-text kash-text-gray hover"
+            >
+              Open Simple Snackbar
+            </button>
+            <div
+              id="kash-snackbar-1"
+              class="kash-snackbar kash-flex kash-align-center kash-bg-gray"
+            >
+              This is a Simple message!
+              <div class="kash-flex kash-align-center">
+                <button class="kash-btn kash-btn-text kash-text-white hover">
+                  Undo
+                </button>
+                <i
+                  id="kash-snackbar-close-btn-1"
+                  class="fa fa-times-circle"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522kash-snackbar-1%2522%250A%2520%2520class%253D%2522kash-snackbar%2520kash-flex%2520kash-align-center%2520kash-bg-gray%2522%250A%253E%250A%2520%2520This%2520is%2520a%2520Simple%2520message%21%250A%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522kash-btn%2520kash-btn-text%2520kash-text-white%2520hover%2522%253EUndo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%253E%250Aconst%2520openBtn_1%2520%253D%2520document.getElementById%28%2522kash-snackbar-open-btn-1%2522%29%253B%250AopenBtn_1.onclick%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520const%2520_snackbar%2520%253D%2520document.getElementById%28%2522kash-snackbar-1%2522%29%253B%250A%2520%2520_snackbar.style.display%2520%253D%250A%2520%2520%2520%2520_snackbar.style.display%2520%253D%253D%253D%2520%2522none%2522%2520%253F%2520%2522flex%2522%2520%253A%2520%2522none%2522%253B%250A%257D%253B%250A%253C%252Fscript%253E%250A"
+              style="
+                width: 100%;
+                height: 75vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h3 class="kash-h5">Different snackbar</h3>
+          <p class="kash-subtitle">
+            Snackbars provide brief notifications. Snackbars based on different
+            color messages
+          </p>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <button
+              id="kash-snackbar-open-btn-2"
+              class="kash-btn kash-btn-outlined kash-text-gray hover"
+            >
+              Open Success Snackbar
+            </button>
+            <button
+              id="kash-snackbar-open-btn-3"
+              class="kash-btn kash-btn-outlined kash-text-gray hover"
+            >
+              Open Error Snackbar
+            </button>
+            <div
+              id="kash-snackbar-2"
+              class="kash-snackbar kash-flex kash-align-center kash-snackbar-green"
+            >
+              This is a Success message!
+              <div class="kash-flex kash-align-center">
+                <button class="kash-btn kash-btn-text kash-text-white hover">
+                  Undo
+                </button>
+                <i
+                  id="kash-snackbar-close-btn-2"
+                  class="fa fa-times-circle"
+                ></i>
+              </div>
+            </div>
+            <div
+              id="kash-snackbar-3"
+              class="kash-snackbar kash-flex kash-align-center kash-bg-red"
+            >
+              This is a Error message!
+              <div class="kash-flex kash-align-center">
+                <button class="kash-btn kash-btn-text kash-text-white hover">
+                  Undo
+                </button>
+                <i
+                  id="kash-snackbar-close-btn-3"
+                  class="fa fa-times-circle"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522kash-snackbar-2%2522%250A%2520%2520class%253D%2522kash-snackbar%2520kash-flex%2520kash-align-center%2520kash-snackbar-green%2522%250A%253E%250A%2520%2520This%2520is%2520a%2520Success%2520message%21%250A%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522kash-btn%2520kash-btn-text%2520kash-text-white%2520hover%2522%253EUndo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Ci%2520id%253D%2522kash-snackbar-close-btn-2%2522%2520class%253D%2522fa%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%250A%2520%2520id%253D%2522kash-snackbar-2%2522%250A%2520%2520class%253D%2522kash-snackbar%2520kash-flex%2520kash-align-center%2520kash-bg-red%2522%250A%253E%250A%2520%2520This%2520is%2520a%2520Error%2520message%21%250A%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522kash-btn%2520kash-btn-text%2520kash-text-white%2520hover%2522%253EUndo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Ci%2520id%253D%2522kash-snackbar-close-btn-2%2522%2520class%253D%2522fa%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 78vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../../scripts/snackbar.js"></script>
+  </body>
+</html>
