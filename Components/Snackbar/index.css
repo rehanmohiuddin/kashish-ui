@@ -9,10 +9,23 @@
   display: none;
 }
 
-.kash-snackbar > div > .kash-btn-text {
+.kash-snackbar-btn {
   margin: 0;
 }
 
 .kash-snackbar-green {
   background-color: var(--green);
+}
+.snackbar-code-snippet {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+.snackbar-code-snippet-width-1 {
+  height: 75vh;
+}
+
+.snackbar-code-snippet-width-2 {
+  height: 78vh;
 }
