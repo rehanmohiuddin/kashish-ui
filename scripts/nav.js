@@ -17,6 +17,9 @@ const searchIcon = document.createElement("i");
 const searchInput = document.createElement("input");
 const header_documentation_click = document.createElement("a");
 header_documentation_click.innerHTML = "Documentation";
+header_documentation_click.href = "/Components/Avatar";
+header_documentation_click.style.textDecoration = "none";
+header_documentation_click.style.color = "#000";
 searchIcon.classList.add("fa");
 searchIcon.classList.add("fa-search");
 searchInput.placeholder = "Search Component";
@@ -52,6 +55,7 @@ const names = [
   { name: "Typography", iconName: "fa-text", route: "/Typography" },
   { name: "Modal", iconName: "fa-window-maximize", route: "/Modal" },
   { name: "Rating", iconName: "fa-star-half-alt", route: "/Rating" },
+  { name: "Snackbar", iconName: "fa-bells", route: "/Snackbar" },
 ];
 
 const avatarList = document.createElement("a");

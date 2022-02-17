@@ -12,6 +12,8 @@
 @import url("./Components/Typography/index.css");
 @import url("./Components/Modal/index.css");
 @import url("./Components/Rating/index.css");
+@import url("./Components/Snackbar/index.css");
+
 *,
 *::after,
 *::before {
