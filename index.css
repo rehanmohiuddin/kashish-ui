@@ -51,7 +51,7 @@ body {
 .kash-bg-color-green {
   background-color: var(--green);
 }
-.kash-sidebar > ul > li > a {
+.kash-sidebar > div > ul > li > a {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -90,13 +90,15 @@ body {
   padding: 1.2rem;
 }
 
-.kash-sidebar > ul {
+.kash-sidebar > div > ul {
   /* padding-left: 1rem; */
   padding: 0;
   margin: 0;
+  height: 75vh;
+  overflow-y: scroll;
 }
 
-.kash-sidebar > ul > li {
+.kash-sidebar > div > ul > li {
   list-style: none;
   font-size: 1.3rem;
   /* padding: 0.4rem; */
@@ -109,7 +111,7 @@ body {
   font-size: 1rem;
 }
 
-.kash-sidebar > ul > li:hover {
+.kash-sidebar > div > ul > li:hover {
   background-color: rgb(214, 214, 214);
 }
 .kash-container {
@@ -145,6 +147,10 @@ main {
 }
 header {
   grid-area: header;
+}
+
+.getting-started {
+  padding: calc(1 * var(--spacing-unit));
 }
 
 .kash-main-container {
@@ -316,6 +322,18 @@ header {
 
 .kash-documentation {
   width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
 }
 
 @media only screen and (min-width: 510px) {
