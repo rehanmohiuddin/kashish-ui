@@ -14,6 +14,7 @@
 @import url("./Components/Rating/index.css");
 @import url("./Components/Snackbar/index.css");
 @import url("./Components/List/index.css");
+@import url("./Components/Navigation/index.css");
 
 *,
 *::after,
@@ -339,7 +340,7 @@ header {
 
 @media only screen and (min-width: 510px) {
   .kash-header > .kash-logo-container,
-  .fa-bars {
+  .nav-mobile-icon {
     display: none !important;
   }
 }
@@ -368,15 +369,18 @@ header {
     border: none;
   }
   .kash-header > .kash-logo-container,
-  .fa-bars {
+  .nav-mobile-icon {
     display: block;
   }
-
+  .nav-mob-list {
+    height: 100vh;
+    overflow-y: scroll;
+  }
   .kash-header > a,
   .kash-header > .kash-input-container {
     display: none;
   }
-  .kash-header > .fa-bars {
+  .kash-header > .nav-mobile-icon {
     position: absolute;
     right: calc(1 * var(--spacing-unit));
     padding: calc(1 * var(--spacing-unit));

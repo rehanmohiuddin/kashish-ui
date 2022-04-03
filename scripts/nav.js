@@ -30,7 +30,7 @@ headerDiv.classList.add("kash-input-container");
 header.appendChild(headerDiv);
 header.appendChild(header_documentation_click);
 hamburgerIcon.classList.add("fa");
-hamburgerIcon.classList.add("fa-bars");
+hamburgerIcon.classList.add("fa-bars", "nav-mobile-icon");
 header.appendChild(hamburgerIcon);
 
 const link = document.createElement("link");
@@ -57,6 +57,7 @@ const names = [
   { name: "Rating", iconName: "fa-star-half-alt", route: "/Rating" },
   { name: "Snackbar", iconName: "fa-bells", route: "/Snackbar" },
   { name: "Lists", iconName: "fa-list", route: "/List" },
+  { name: "Navigation", iconName: "fa-bars", route: "/Navigation" },
 ];
 
 const avatarList = document.createElement("a");
@@ -117,6 +118,7 @@ startIcon.classList.add("fa");
 startIcon.classList.add("fa--book");
 mobNav.appendChild(_ul);
 _ul.appendChild(_li);
+_ul.classList.add("nav-mob-list");
 _li.classList.add("kash-flex");
 _li.classList.add("kash-h5");
 _li.classList.add("kash-gap");
@@ -186,7 +188,7 @@ names.forEach((_name) => {
   a.innerHTML = a.innerHTML + _name.name;
   a.classList.add("kash-a-none");
 });
-// _ul.appendChild(__ul);
+_ul.appendChild(__ul);
 nav.appendChild(mobNav);
 
 hamburgerIcon.onclick = () => {
