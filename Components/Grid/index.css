@@ -1,0 +1,28 @@
+.kash-grid {
+  display: grid;
+  gap: calc(1 * var(--spacing-unit));
+}
+
+.grid-items-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-items-2 > .kash-grid-item-1,
+.grid-items-2 > .kash-grid-item-2 {
+  background-color: var(--light-red);
+  height: 25vh;
+  width: 25vw;
+}
+
+.grid-items-3 {
+  grid-template-columns: repeat(3, 1fr);
+  padding: calc(1 * var(--spacing-unit));
+}
+
+.grid-items-3 > .kash-grid-item-1,
+.grid-items-3 > .kash-grid-item-2,
+.grid-items-3 > .kash-grid-item-3 {
+  background-color: var(--gray);
+  height: 20vh;
+  width: 15vw;
+}
