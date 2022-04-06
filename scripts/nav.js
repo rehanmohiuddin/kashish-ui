@@ -58,6 +58,7 @@ const names = [
   { name: "Snackbar", iconName: "fa-bells", route: "/Snackbar" },
   { name: "Lists", iconName: "fa-list", route: "/List" },
   { name: "Navigation", iconName: "fa-bars", route: "/Navigation" },
+  { name: "Simplified Grid", iconName: "fa-th", route: "/Grid" },
 ];
 
 const avatarList = document.createElement("a");
