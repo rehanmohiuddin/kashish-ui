@@ -5,6 +5,8 @@
 Quickly build beautiful UI apps. KASHISH-UI is a simple and customizable component library to build faster, beautiful, and more accessible Frontend applications.
 start with [Kashish-UI](https://kashish-ui.netlify.app/).
 
+## Access Temp Dev Live Here [Kashish-UI-Temp](https://kashish-ui-temp.netlify.app/).
+
 # Installation
 
 ### Install Via CDN
@@ -86,5 +88,22 @@ start with [Kashish-UI](https://kashish-ui.netlify.app/).
 - Simple Snackbar
 - Success Snackbar
 - Error Snackbar
+
+### List
+
+- Basic Spaced List
+- Basic List Ordered
+- Basic List Unordered
+- Basic Stacked List
+
+### Navigation
+
+- Basic Navigation
+- Mobile Navigation
+
+### Grid
+
+- Grid With 2 Items
+- Grid With 3 Items
 
 ![Preview GIF](https://i.ibb.co/TrtHgW7/ezgif-com-gif-maker.gif)
