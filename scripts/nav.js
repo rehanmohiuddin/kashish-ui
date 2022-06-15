@@ -30,7 +30,7 @@ headerDiv.classList.add("kash-input-container");
 header.appendChild(headerDiv);
 header.appendChild(header_documentation_click);
 hamburgerIcon.classList.add("fa");
-hamburgerIcon.classList.add("fa-bars");
+hamburgerIcon.classList.add("fa-bars", "nav-mobile-icon");
 header.appendChild(hamburgerIcon);
 
 const link = document.createElement("link");
@@ -56,6 +56,9 @@ const names = [
   { name: "Modal", iconName: "fa-window-maximize", route: "/Modal" },
   { name: "Rating", iconName: "fa-star-half-alt", route: "/Rating" },
   { name: "Snackbar", iconName: "fa-bells", route: "/Snackbar" },
+  { name: "Lists", iconName: "fa-list", route: "/List" },
+  { name: "Navigation", iconName: "fa-bars", route: "/Navigation" },
+  { name: "Simplified Grid", iconName: "fa-th", route: "/Grid" },
 ];
 
 const avatarList = document.createElement("a");
@@ -86,6 +89,7 @@ gettingStartedIcon.classList.add("fa-book");
 h3.appendChild(gettingStartedIcon);
 h3.innerHTML = h3.innerHTML + " Getting Started";
 upperLi.onclick = () => (window.location.href = "/");
+upperLi.classList.add("getting-started");
 
 btn.classList.add("kash-components-list");
 btn.appendChild(span);
@@ -100,7 +104,7 @@ downArrowIcon.classList.add("fa-chevron-down");
 btn.appendChild(downArrowIcon);
 aside.appendChild(btn);
 nav.appendChild(aside);
-aside.appendChild(ul);
+// aside.appendChild(ul);
 aside.classList.add("kash-sidebar");
 
 li.classList.add("kash-clickable");
@@ -108,12 +112,14 @@ li.classList.add("kash-clickable");
 const mobNav = document.createElement("div");
 const _ul = document.createElement("ul");
 const _li = document.createElement("li");
+const _navBodyContainer = document.createElement("div");
 mobNav.classList.add("kash-nav-mob");
 const startIcon = document.createElement("i");
 startIcon.classList.add("fa");
 startIcon.classList.add("fa--book");
 mobNav.appendChild(_ul);
 _ul.appendChild(_li);
+_ul.classList.add("nav-mob-list");
 _li.classList.add("kash-flex");
 _li.classList.add("kash-h5");
 _li.classList.add("kash-gap");
@@ -150,6 +156,7 @@ __ul.classList.add("kash-flex-col");
 __ul.classList.add("kash-gap-2");
 __ul.style.display = "none";
 __ul.id = "comp-list";
+
 // __ul.classList.add("kash-align-center");
 downIcon.onclick = () => {
   __ul.style.display = __ul.style.display === "flex" ? "none" : "flex";
@@ -208,7 +215,9 @@ names.forEach((_name) => {
   Icon.classList.add(_name.iconName);
   a.innerHTML = a.innerHTML + _name.name;
 });
+_navBodyContainer.appendChild(ul);
 
+aside.appendChild(_navBodyContainer);
 document.getElementById("kash-container").append(header);
 document.getElementById("kash-container").append(nav);
 

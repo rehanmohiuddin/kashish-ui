@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="../../index.css" />
+
+    <title>Navigation</title>
+  </head>
+  <body>
+    <div id="kash-container" class="kash-container-root">
+      <script src="../../scripts/nav.js"></script>
+      <main>
+        <div class="kash-main-container kash-content-right">
+          <h1 class="kash-h2 kash-text-left">Navigation</h1>
+          <div class="kash-p">
+            <h3 class="kash-h5">Basic Navigation</h3>
+            <p class="kash-subtitle">Navigation Desktop Component</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <nav class="kash-desktop-header kash-flex kash-align-center">
+              <a href="#">
+                <h3 class="kash-h4">Logo</h3>
+              </a>
+              <ul
+                class="kash-desktop-nav-list kash-flex kash-justify-between kash-gap"
+              >
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522kash-desktop-header%2520kash-flex%2520kash-align-center%2522%253E%250A%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522kash-h4%2522%253ELogo%253C%252Fh3%253E%250A%2520%2520%253C%252Fa%253E%250A%2520%2520%253Cul%2520class%253D%2522kash-desktop-nav-list%2520kash-flex%2520kash-justify-between%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EProducts%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ECategory%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EContact%2520Us%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+              style="
+                width: 100%;
+                height: 80vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="kash-p">
+            <h3 class="kash-h5">Mobile Navigation</h3>
+            <p class="kash-subtitle">Navigation Mobile Component</p>
+          </div>
+          <div
+            class="kash-container kash-bg-light-gray kash-flex kash-flex-col kash-justify-center kash-align-center kash-border-sm kash-m kash-p kash-gap"
+          >
+            <nav class="kash-desktop-header kash-flex kash-align-center">
+              <h3 id="nav-btn" class="kash-h4">
+                <i class="fa fa-bars"></i>
+              </h3>
+
+              <ul
+                class="kash-desktop-nav-list kash-flex kash-justify-between kash-gap kash-align-center"
+              >
+                <li>
+                  <div class="kash-badge-container">
+                    <i class="fa fa-user-circle kash-icon-md"></i>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="kash-badge-container">
+                      <i class="fa fa-envelope kash-icon-md"></i>
+                      <p
+                        class="kash-badge kash-subtitle kash-bg-red kash-badge-md kash-badge-absolute"
+                      >
+                        5
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="kash-badge-container">
+                      <i class="fa fa-bell kash-icon-md"></i>
+                      <p
+                        class="kash-badge kash-subtitle kash-bg-red kash-badge-md kash-badge-absolute"
+                      >
+                        5
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul id="nav-mob" class="nav-mob-list nav-mob">
+            <li class="kash-flex kash-h5 kash-gap kash-align-center">
+              <i class="fa fa-book"></i>Test
+            </li>
+            <li
+              class="kash-flex kash-h5 kash-gap kash-align-center kash-between kash-mt-3"
+            >
+              <div class="kash-flex kash-align-center kash-gap">
+                <i class="fa fa-toggle-on"></i>Test
+              </div>
+            </li>
+            <ul
+              class="kash-mx kash-m kash-flex kash-flex-col kash-gap-2"
+              id="comp-list"
+              style="display: none"
+            >
+              List Item
+            </ul>
+          </ul>
+          <div class="kash-code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=779&ds=true&dsyoff=4px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=12px&lh=158%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522kash-desktop-header%2520kash-flex%2520kash-align-center%2522%253E%250A%2520%2520%253Ch3%2520id%253D%2522nav-btn%2522%2520class%253D%2522kash-h4%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fh3%253E%250A%250A%2520%2520%253Cul%2520class%253D%2522kash-desktop-nav-list%2520kash-flex%2520kash-justify-between%2520kash-gap%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user-circle%2520kash-icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-envelope%2520kash-icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-badge%2520kash-subtitle%2520kash-bg-red%2520kash-badge-md%2520kash-badge-absolute%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25205%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-bell%2520kash-icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522kash-badge%2520kash-subtitle%2520kash-bg-red%2520kash-badge-md%2520kash-badge-absolute%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25205%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%253Cul%2520id%253D%2522nav-mob%2522%2520class%253D%2522nav-mob-list%2520nav-mob%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522kash-flex%2520kash-h5%2520kash-gap%2520kash-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-book%2522%253E%253C%252Fi%253ETest%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522kash-flex%2520kash-h5%2520kash-gap%2520kash-align-center%2520kash-between%2520kash-mt-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522kash-flex%2520kash-align-center%2520kash-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-toggle-on%2522%253E%253C%252Fi%253ETest%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cul%250A%2520%2520%2520%2520%2520%2520class%253D%2522kash-mx%2520kash-m%2520kash-flex%2520kash-flex-col%2520kash-gap-2%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522comp-list%2522%250A%2520%2520%2520%2520%2520%2520style%253D%2522display%253A%2520none%2522%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520List%2520Item%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+              style="
+                width: 100%;
+                height: 100vh;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      const hamburgerMenuBtn = document.getElementById("nav-btn");
+      hamburgerMenuBtn.onclick = () => {
+        const navBasicDisplay =
+          document.getElementById("nav-mob").style.display;
+        document.getElementById("nav-mob").style.display =
+          navBasicDisplay === "block" ? "none" : "block";
+      };
+    </script>
+  </body>
+</html>

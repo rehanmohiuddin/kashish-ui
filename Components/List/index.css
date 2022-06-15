@@ -1,0 +1,16 @@
+.kash-basic-ol {
+  list-style: none;
+}
+.kash-basic {
+  background-color: var(--white);
+  list-style: none;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--gray);
+  width: 25vw;
+}
+.kash-basic > li {
+  padding: calc(1 * var(--spacing-unit));
+  cursor: pointer;
+}
+.kash-basic > li:hover {
+  background-color: var(--light-gray);
+}
